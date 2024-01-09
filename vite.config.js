@@ -9,7 +9,7 @@ export default defineConfig({
 		// Get rid of the CORS error
 		proxy: {
 			"/api": {
-				target: "https://spare-brittaney-readicharge.koyeb.app",
+				target: "https://rc-chat-server-production.up.railway.app/",
 				changeOrigin: true,
 				secure: false,
 			},

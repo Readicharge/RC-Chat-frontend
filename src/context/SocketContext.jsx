@@ -15,7 +15,7 @@ export const SocketContextProvider = ({ children }) => {
 	const user = useRecoilValue(userAtom);
 
 	useEffect(() => {
-		const socket = io("https://spare-brittaney-readicharge.koyeb.app/", {
+		const socket = io("https://rc-chat-server-production.up.railway.app/", {
 			query: {
 				userId: user?._id,
 			},
