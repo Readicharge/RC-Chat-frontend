@@ -36,7 +36,7 @@ const Actions = ({ post }) => {
 		if (isLiking) return;
 		setIsLiking(true);
 		try {
-			const res = await fetch("https://spare-brittaney-readicharge.koyeb.app/api/posts/like/" + post._id, {
+			const res = await fetch("/api/posts/like/" + post._id, {
 				method: "PUT",
 				headers: {
 					"Content-Type": "application/json",
